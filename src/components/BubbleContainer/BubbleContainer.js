@@ -7,21 +7,29 @@ function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min) + min); // The maximum is exclusive and the minimum is inclusive
 }
 function Dombek(i){
-  i =(i-35)*0.1;
+  i =(i-7)*1.4;
   return   (i*i) ;
 }
-const BoubbleArray = [];
-for(let i =0; i<70;i++){
-  let left = getRandomInt((-150 + i*22), (100 +i*22));
-  let top = getRandomInt(650, 750);
-  let size = getRandomInt((Dombek(i)+50), Dombek(i)+130)
-  BoubbleArray.push({left: left, top:top, size: size});
+const BubbleArray = [];
+//Bottom line of boubbles
+for(let i =0; i<15;i++){
+  let left = getRandomInt((-100 + i*140), (-70 +i*140));
+  let bottom = getRandomInt((Dombek(i)*0.5)-30,(Dombek(i)*0.5)+ 5);
+  let size = getRandomInt((Dombek(i)+140), Dombek(i)+150)
+  BubbleArray.push({left: left, bottom:bottom, size: size});
+}
+//top line of boubbles
+for(let i =0; i<15;i++){
+  let left = getRandomInt((20 + i*140), (120 +i*140));
+  let bottom = getRandomInt((Dombek(i)*0.8) +50,(Dombek(i)*0.8)+ 110);
+  let size = getRandomInt((Dombek(i)*0.5)+50,(Dombek(i)*0.5)+100)
+  BubbleArray.push({left: left, bottom:bottom, size: size});
 }
 
   return (
     <div className='Bubbles'>
         <div>
-          {BoubbleArray.map(function(object, i) {return <div style={{backgroundColor:"rgba(0,0,255,0.5)", borderRadius:"100%", position:"fixed", left:object.left, top:object.top, width:object.size, height:object.size}} key={i}></div>;
+          {BubbleArray.map(function(object, i) {return <div style={{backgroundColor:"rgba(189, 227, 255, 0.5)", borderRadius:"100%", position:"fixed", left:object.left, bottom:object.bottom, width:object.size, height:object.size}} key={i}></div>;
           })}
         </div>
     </div>
