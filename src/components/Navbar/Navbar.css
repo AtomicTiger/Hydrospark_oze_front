@@ -1,8 +1,7 @@
 .Navbar{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     background-color: #B38FFF;
-    align-items: center;
     color: white;
     height: 100px;
     width: 100vw;
@@ -11,9 +10,9 @@
 .LogoBox{
     display: flex;
     justify-content: left;
+    align-items: center;
     box-sizing: content-box;
-    width: 50vw;
-    margin: 0px 0px 0px 100px;
+    margin: 0px 0px 0px 80px;
 
 }
 .Menu{
@@ -21,8 +20,7 @@
     justify-content: right;
     box-sizing: content-box;
     align-items: center;
-    width: 50vw;
-    margin: 0px 150px 0px 0px;
+    margin: 0px 35px 0px 0px;
 }
 .MenuButton{
     align-items: center;
@@ -32,12 +30,23 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    box-sizing: content-box;
     margin: 0px 15px 0px 15px;
     width: 100px;
     height: 50px;
     background-color: #8C5DA1;
+    z-index: 1;
 }
 #svgLogo{
     height: 50px;
     width: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+    .MenuButton{
+        display: none;
+    }
+    .LoginButton{
+        display: none;
+    }
 }

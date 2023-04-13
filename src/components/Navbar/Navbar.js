@@ -1,4 +1,5 @@
 import './Navbar.css';
+import BurgerMenu from '../BurgerMenu/BurgerMenu';
 
 function Navbar() {
 
@@ -34,16 +35,18 @@ function Navbar() {
             <div>HydroSpark</div>
         </div>
         <div className='Menu'>
-            <div className='MenuButton'>Home</div>
-            <div className='MenuButton'>Documentation</div>
-            <div className='MenuButton'>Contact</div>
-            <div className='LoginButton'>
-              <p>Log in</p>
-            </div>
+          <div className="Bubbbles">
+            {BubbleArray.map(function(object, i) {return <div style={{backgroundColor:"rgba(255, 255, 255, 0.2)", borderRadius:"100%", position:"fixed", right:object.right, top:object.top, width:object.size, height:object.size}} key={i}></div>;})}
+          </div>
+          <div className='MenuButton'>Home</div>
+          <div className='MenuButton'>Documentation</div>
+          <div className='MenuButton'>Contact</div>
+          <div className='LoginButton'>
+            <p>Log in</p>
+          </div>
+          <BurgerMenu></BurgerMenu>
         </div>
-        <div className="Bubbbles">
-          {BubbleArray.map(function(object, i) {return <div style={{backgroundColor:"rgba(255, 255, 255, 0.2)", borderRadius:"100%", position:"fixed", right:object.right, top:object.top, width:object.size, height:object.size}} key={i}></div>;})}
-        </div>
+
     </div>
   );
 }
