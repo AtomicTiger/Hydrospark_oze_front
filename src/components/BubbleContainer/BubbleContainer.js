@@ -29,8 +29,7 @@ for(let i =0; i<15;i++){
   return (
     <div className='Bubbles'>
         <div>
-          {BubbleArray.map(function(object, i) {return <div style={{backgroundColor:"rgba(189, 227, 255, 0.5)", borderRadius:"100%", position:"fixed", left:object.left, bottom:object.bottom, width:object.size, height:object.size}} key={i}></div>;
-          })}
+          {BubbleArray.map(function(object, i) {return <div style={{backgroundColor:"rgba(189, 227, 255, 0.5)", borderRadius:"100%", position:"fixed", left:object.left, bottom:object.bottom, width:object.size, height:object.size}} key={i}></div>;})}
         </div>
     </div>
   );
