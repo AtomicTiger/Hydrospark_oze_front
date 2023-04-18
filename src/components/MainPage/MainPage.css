@@ -1,6 +1,9 @@
 .MainPage{
   position: fixed;
+  display: flex;
+  justify-content: center;
   background-color: #B38FFF;
   width: 100vw;
   height: 200vh;
+  padding-top: 100px;
 }
