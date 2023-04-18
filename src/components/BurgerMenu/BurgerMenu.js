@@ -17,7 +17,7 @@ function BurgerMenu() {
   useEffect(() => {
     const handleResize = () => {
       if(window.innerWidth > 600){
-        console.error("Bombek menu update")
+        console.error("menu update 😎")
         setBurerClass([false, "bar1-start", "bar2-start", "bar3-start"])
       }
     };

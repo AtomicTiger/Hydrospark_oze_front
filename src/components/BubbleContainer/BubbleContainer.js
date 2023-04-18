@@ -1,5 +1,5 @@
 
-function BubbleContainer() {
+function BubbleContainer(props) {
 
 function getRandomInt(min, max) {
   min = Math.ceil(min);
@@ -29,7 +29,9 @@ for(let i =0; i<15;i++){
   return (
     <div className='Bubbles'>
         <div>
-          {BubbleArray.map(function(object, i) {return <div style={{backgroundColor:"rgba(189, 227, 255, 0.5)", borderRadius:"100%", position:"fixed", left:object.left, bottom:object.bottom, width:object.size, height:object.size}} key={i}></div>;})}
+          { /* blue color bubbles ="rgba(189, 227, 255, 0.5)"*/}
+          { /* white color bubbles ="rgba(255, 255, 255, 0.2)"*/}
+          {BubbleArray.map(function(object, i) {return <div style={{backgroundColor:props.color, borderRadius:"100%", position:"fixed", left:object.left, bottom:object.bottom, width:object.size, height:object.size}} key={i}></div>;})}
         </div>
     </div>
   );

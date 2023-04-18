@@ -1,13 +1,13 @@
 import './App.css';
-import BubbleContainer from './components/BubbleContainer/BubbleContainer';
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
+import MainPage from './components/MainPage/MainPage';
 
 function App() {
   return (
     <div className="App">
       <Navbar></Navbar>
-      <BubbleContainer></BubbleContainer>
+      <MainPage></MainPage>
       <Footer></Footer>
     </div>
   );

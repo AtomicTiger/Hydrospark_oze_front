@@ -1,7 +1,11 @@
 .Navbar{
     display: flex;
+    position: fixed;
+    z-index: 1;
     justify-content: space-between;
     background-color: #B38FFF;
+    font-size: 16px;
+    font-weight: 500;
     color: white;
     height: 100px;
     width: 100vw;
@@ -13,6 +17,7 @@
     align-items: center;
     box-sizing: content-box;
     margin: 0px 0px 0px 80px;
+    font-size: 20px;
 
 }
 .Menu{

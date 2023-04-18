@@ -8,14 +8,25 @@ function Navbar() {
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min) + min); // The maximum is exclusive and the minimum is inclusive
   }
-
   const BubbleArray = [];
-
   for(let i =0; i<5;i++){
     let right = getRandomInt(-50,80);
     let top = getRandomInt(-50,10);
     let size = getRandomInt(50,80)
     BubbleArray.push({right:right, top:top, size: size});
+  }
+
+  const handleHome = ()=>{
+
+  }
+  const handleDocumentation = ()=>{
+    
+  }
+  const handleContact = ()=>{
+    
+  }
+  const handleLogin = ()=>{
+    
   }
 
   return (
@@ -38,10 +49,10 @@ function Navbar() {
           <div className="Bubbbles">
             {BubbleArray.map(function(object, i) {return <div style={{backgroundColor:"rgba(255, 255, 255, 0.2)", borderRadius:"100%", position:"fixed", right:object.right, top:object.top, width:object.size, height:object.size}} key={i}></div>;})}
           </div>
-          <div className='MenuButton'>Home</div>
-          <div className='MenuButton'>Documentation</div>
-          <div className='MenuButton'>Contact</div>
-          <div className='LoginButton'>
+          <div className='MenuButton' onClick={handleHome}>Home</div>
+          <div className='MenuButton' onClick={handleDocumentation}>Documentation</div>
+          <div className='MenuButton' onClick={handleContact}>Contact</div>
+          <div className='LoginButton' onClick={handleLogin}>
             <p>Log in</p>
           </div>
           <BurgerMenu></BurgerMenu>
