@@ -8,105 +8,124 @@
 
 
 @media only screen and (max-width: 600px) {
-    #BurgerMenu{
-        z-index: 1;
-        display: block;
-        padding: 7px;
-        box-sizing: border-box;
-        width:50px;
-        height:50px;
-        background-color: #8C5DA1;
-        border-radius: 5px;
-    }
-    .bar1, .bar2, .bar3{
-        display: block;
-        position: relative;
-        width:36px;
-        height:5px;
-        background-color: white;
-        border-radius: 5px;
-    }
-    @keyframes bar1-anim {
-        from {
-            top:13px;
-            transform: rotate(45deg);}
-        to {
-            transform: rotate(0deg);
-            top:3px; 
-        }
-    }
-    .bar1{
-        top:3px;
-        animation-name: bar1-anim;
-        animation-duration: 0.5s;
-    }
-    @keyframes bar2-anim {
-        from {
-            top:8px;
-            transform: rotate(-45deg);}
-        to {
-            top:10px;
-            transform: rotate(0deg);
-        }
-    }
-    .bar2{
-        top:10px;
-        animation-name: bar2-anim;
-        animation-duration: 0.5s;
-    }
-    @keyframes bar3-anim {
-        from {top:24px;}
-        to {top:17px; }
-    }
-    .bar3{
-        top:17px;
-        animation-name: bar3-anim;
-        animation-duration: 0.5s;
-    }
-    .bar1-2, .bar2-2, .bar3-2{
-        display: block;
-        position: relative;
-        width:36px;
-        height:5px;
-        background-color: white;
-        border-radius: 5px;
-    }
-    @keyframes bar1-2-anim {
-        from {top:3px;
-            transform: rotate(0deg)}
-        to {
-            top:13px;
-            transform: rotate(45deg)
-        }
-    }
-    .bar1-2{
+  #BurgerMenu{
+    z-index: 1;
+    display: block;
+    padding: 7px;
+    box-sizing: border-box;
+    width:50px;
+    height:50px;
+    background-color: #8C5DA1;
+    border-radius: 5px;
+  }
+  .bar1, .bar2, .bar3{
+    display: block;
+    position: relative;
+    width:36px;
+    height:5px;
+    background-color: white;
+    border-radius: 5px;
+  }
+  @keyframes bar1-anim {
+    from {
         top:13px;
-        transform: rotate(45deg);
-        animation-name: bar1-2-anim;
-        animation-duration: 0.5s;
+        transform: rotate(45deg);}
+    to {
+        transform: rotate(0deg);
+        top:3px; 
     }
-    @keyframes bar2-2-anim {
-        from {top:10px;
-            transform: rotate(0deg)}
-        to {
-            top:8px;
-            transform: rotate(-45deg)
-        }
-    }
-    .bar2-2{
+  }
+  .bar1{
+    top:3px;
+    animation-name: bar1-anim;
+    animation-duration: 0.5s;
+  }
+  @keyframes bar2-anim {
+    from {
         top:8px;
-        transform: rotate(-45deg);
-        animation-name: bar2-2-anim;
-        animation-duration: 0.5s;
+        transform: rotate(-45deg);}
+    to {
+        top:10px;
+        transform: rotate(0deg);
     }
-    @keyframes bar3-2-anim {
-        from {top:17px;}
-        to {top:24px}
+  }
+  .bar2{
+    top:10px;
+    animation-name: bar2-anim;
+    animation-duration: 0.5s;
+  }
+  @keyframes bar3-anim {
+    from {top:24px;}
+    to {top:17px; }
+  }
+  .bar3{
+    top:17px;
+    animation-name: bar3-anim;
+    animation-duration: 0.5s;
+  }
+  .bar1-2, .bar2-2, .bar3-2{
+    display: block;
+    position: relative;
+    width:36px;
+    height:5px;
+    background-color: white;
+    border-radius: 5px;
+  }
+  @keyframes bar1-2-anim {
+    from {top:3px;
+        transform: rotate(0deg)}
+    to {
+        top:13px;
+        transform: rotate(45deg)
     }
-    .bar3-2{
-        top:24px;
-        animation-name: bar3-2-anim;
-        animation-duration: 0.5s;
+  }
+  .bar1-2{
+    top:13px;
+    transform: rotate(45deg);
+    animation-name: bar1-2-anim;
+    animation-duration: 0.5s;
+  }
+  @keyframes bar2-2-anim {
+    from {top:10px;
+        transform: rotate(0deg)}
+    to {
+        top:8px;
+        transform: rotate(-45deg)
     }
+  }
+  .bar2-2{
+    top:8px;
+    transform: rotate(-45deg);
+    animation-name: bar2-2-anim;
+    animation-duration: 0.5s;
+  }
+  @keyframes bar3-2-anim {
+    from {top:17px;}
+    to {top:24px}
+  }
+  .bar3-2{
+    top:24px;
+    animation-name: bar3-2-anim;
+    animation-duration: 0.5s;
+  }
+
+  .bar1-start, .bar2-start, .bar3-start{
+    display: block;
+    position: relative;
+    width:36px;
+    height:5px;
+    background-color: white;
+    border-radius: 5px;
+  }
+  .bar1-start{
+    top:3px;
+  }
+  .bar2-start{
+    top:10px;
+  }
+  .bar3-start{
+    top:17px;
+  }
+
 }
 
