@@ -1,18 +1,26 @@
 .MainPage{
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   background-color: #B38FFF;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
   box-sizing: border-box;
   padding-top: 100px;
 }
-@media only screen and (max-width: 600px) {
-  body{
-
-  }
+.MainPage .content{
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+@media only screen and (max-width: 820px) {
   .MainPage{
     flex-direction: column;
-height: 150vh;
+    height: 100%;
+  }
+  .MainPage .content{
+    display: flex;
+    flex-direction: column;
   }
 }

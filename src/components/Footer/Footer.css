@@ -1,14 +1,14 @@
 .Footer{
     display: flex;
-    position: fixed;
-    bottom: 0px;
     justify-content: right;
+  
+    box-sizing: border-box;
     /*background-color: #000000;*/
     background-color: #8C5DA1;
     align-items: center;
     color: white;
     height: 60px;
-    width: 100vw;
+    width: 100%;
 }
 .Marker{
     display: flex;

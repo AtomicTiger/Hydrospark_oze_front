@@ -9,10 +9,12 @@ function MainPage() {
   return (
     <div className='MainPage'>
       <Navbar login={false}></Navbar>
-      <LoginMenu></LoginMenu>
-      <RegisterMenu></RegisterMenu>
-      <BubbleContainer color={"rgba(255, 255, 255, 0.2)"}></BubbleContainer>
-      <Footer></Footer>
+      <div className='content'>
+        <LoginMenu></LoginMenu>
+        <RegisterMenu></RegisterMenu>
+      </div>
+
+      <Footer color={"rgba(255, 255, 255, 0.2)"}></Footer>
     </div>
   );
 }
