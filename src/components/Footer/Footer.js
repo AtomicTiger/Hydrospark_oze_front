@@ -1,14 +1,12 @@
 import './Footer.css';
-import BubbleContainer from '../BubbleContainer/BubbleContainer';
 
-function Footer(props) {
+function Footer() {
 
   return (
     <div className='Footer'>
-          <BubbleContainer color={props.color}></BubbleContainer>
-        <div className='Marker'>
-            © HydroSpark Team
-        </div>
+      <div className='Marker'>
+        © HydroSpark Team
+      </div>
     </div>
   );
 }

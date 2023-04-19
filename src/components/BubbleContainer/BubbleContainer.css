@@ -1,0 +1,15 @@
+.Bubbles{
+  display: flex;
+  justify-content: right;
+  position: relative;
+  box-sizing: border-box;
+  /*background-color: #000000;*/
+  background-color: #B38FFF;
+  box-sizing: border-box;
+  align-items: center;
+  color: white;
+  height: 60px;
+  width: 100vw;
+  z-index: 0;
+  overflow: hidden;
+}

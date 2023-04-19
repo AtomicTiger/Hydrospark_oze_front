@@ -1,7 +1,7 @@
 .Footer{
     display: flex;
     justify-content: right;
-  
+    position: relative;
     box-sizing: border-box;
     /*background-color: #000000;*/
     background-color: #8C5DA1;
@@ -9,6 +9,7 @@
     color: white;
     height: 60px;
     width: 100%;
+    z-index: 2;
 }
 .Marker{
     display: flex;
