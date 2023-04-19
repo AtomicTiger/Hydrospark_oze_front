@@ -7,7 +7,7 @@ function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min) + min); // The maximum is exclusive and the minimum is inclusive
 }
 function Dombek(i){
-  i =(i-7)*1.4;
+  i =(i-6)*1.4;
   return   (i*i) ;
 }
 const BubbleArray = [];

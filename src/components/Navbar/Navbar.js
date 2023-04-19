@@ -54,7 +54,7 @@ function Navbar(props) {
           <div className='MenuButton' onClick={handleContact}>Contact</div>
           {props.login
            ? <div id='LoginButton' onClick={handleLogin}><p>Log in</p></div>
-           : true
+           : <div className='bubbleMargin'></div>
           }
 
           <BurgerMenu></BurgerMenu>

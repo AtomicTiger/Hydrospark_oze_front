@@ -42,6 +42,9 @@
     background-color: #8C5DA1;
     z-index: 1;
 }
+.bubbleMargin{
+  width: 100px;
+}
 #svgLogo{
     height: 50px;
     width: 50px;
