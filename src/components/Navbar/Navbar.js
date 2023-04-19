@@ -53,7 +53,7 @@ function Navbar(props) {
           <div className='MenuButton' onClick={handleDocumentation}>Documentation</div>
           <div className='MenuButton' onClick={handleContact}>Contact</div>
           {props.login
-           ? <div className='LoginButton' onClick={handleLogin}><p>Log in</p></div>
+           ? <div id='LoginButton' onClick={handleLogin}><p>Log in</p></div>
            : true
           }
 

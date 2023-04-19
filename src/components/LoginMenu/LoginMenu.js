@@ -8,11 +8,11 @@ function LoginMenu() {
       <form className='loginForm'>
         <div>
           <label >Email</label>
-          <input id='loginEmail'></input>
+          <input placeholder='Email'></input>
           <label>Password</label>
-          <input id='loginPassword'></input>
+          <input placeholder='Password'></input>
         </div>
-        <button>Login</button>
+        <button id='LoginButtonForm'>Log in</button>
       </form>
     </div>
   );
