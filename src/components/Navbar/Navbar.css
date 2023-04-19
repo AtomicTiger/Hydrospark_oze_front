@@ -1,60 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@500&display=swap');
 .Navbar{
-    display: flex;
-    position: fixed;
-    z-index: 1;
-    justify-content: space-between;
-    background-color: #B38FFF;
-    font-size: 16px;
-    font-weight: 500;
-    color: white;
-    height: 100px;
-    width: 100vw;
+  font-family: 'Exo', sans-serif;
+  text-shadow: 0px 2px 2px rgba(000, 000, 000, 0.3) ;
+  display: flex;
+  position: fixed;
+  z-index: 1;
+  justify-content: space-between;
+  background-color: #B38FFF;
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  height: 100px;
+  width: 100vw;
 
 }
 .LogoBox{
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    box-sizing: content-box;
-    margin: 0px 0px 0px 80px;
-    font-size: 20px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  box-sizing: content-box;
+  margin: 0px 0px 0px 80px;
+  font-size: 20px;
 
 }
 .Menu{
-    display: flex;
-    justify-content: right;
-    box-sizing: content-box;
-    align-items: center;
-    margin: 0px 35px 0px 0px;
+  display: flex;
+  justify-content: right;
+  box-sizing: content-box;
+  align-items: center;
+  margin: 0px 35px 0px 0px;
 }
 .MenuButton{
-    align-items: center;
-    margin: 0px 15px 0px 15px
+  align-items: center;
+  margin: 0px 15px 0px 15px
 }
 #LoginButton{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-sizing: content-box;
-    margin: 0px 15px 0px 15px;
-    width: 100px;
-    height: 50px;
-    background-color: #8C5DA1;
-    z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: content-box;
+  margin: 0px 15px 0px 15px;
+  width: 100px;
+  height: 50px;
+  background-color: #8C5DA1;
+  z-index: 1;
 }
 .bubbleMargin{
   width: 100px;
 }
 #svgLogo{
-    height: 50px;
-    width: 50px;
+  height: 50px;
+  width: 50px;
 }
 
 @media only screen and (max-width: 600px) {
-    .MenuButton{
-        display: none;
-    }
-    .LoginButton{
-        display: none;
-    }
+  .MenuButton{
+      display: none;
+  }
+  .LoginButton{
+      display: none;
+  }
 }
