@@ -1,9 +1,18 @@
 .MainPage{
-  position: fixed;
   display: flex;
   justify-content: center;
   background-color: #B38FFF;
   width: 100vw;
-  height: 200vh;
+  height: 100vh;
+  box-sizing: border-box;
   padding-top: 100px;
+}
+@media only screen and (max-width: 600px) {
+  body{
+
+  }
+  .MainPage{
+    flex-direction: column;
+height: 150vh;
+  }
 }

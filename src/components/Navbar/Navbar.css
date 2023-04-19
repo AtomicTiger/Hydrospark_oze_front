@@ -4,6 +4,7 @@
   text-shadow: 0px 2px 2px rgba(000, 000, 000, 0.3) ;
   display: flex;
   position: fixed;
+  top: 0px;
   z-index: 1;
   justify-content: space-between;
   background-color: #B38FFF;
