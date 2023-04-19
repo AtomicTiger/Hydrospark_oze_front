@@ -7,7 +7,7 @@ function LoginMenu() {
       <p className="loginTitle">LOG IN</p>
       <form className='loginForm'>
         <div>
-          <label >Email</label>
+          <label>Email</label>
           <input placeholder='Email'></input>
           <label>Password</label>
           <input placeholder='Password'></input>
