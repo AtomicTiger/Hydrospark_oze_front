@@ -1,7 +1,7 @@
 import './Navbar.css';
 import BurgerMenu from '../BurgerMenu/BurgerMenu';
 
-function Navbar() {
+function Navbar(props) {
 
   function getRandomInt(min, max) {
     min = Math.ceil(min);
@@ -52,9 +52,11 @@ function Navbar() {
           <div className='MenuButton' onClick={handleHome}>Home</div>
           <div className='MenuButton' onClick={handleDocumentation}>Documentation</div>
           <div className='MenuButton' onClick={handleContact}>Contact</div>
-          <div className='LoginButton' onClick={handleLogin}>
-            <p>Log in</p>
-          </div>
+          {props.login
+           ? <div className='LoginButton' onClick={handleLogin}><p>Log in</p></div>
+           : true
+          }
+
           <BurgerMenu></BurgerMenu>
         </div>
 

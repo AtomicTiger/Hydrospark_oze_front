@@ -1,7 +1,26 @@
 #LoginMenu{
   margin: 50px;
-  width: 400px;
+  width: 300px;
   height: 300px;
+  padding: 20px;
   background-color: blueviolet;
   border-radius: 10px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+.loginTitle{
+  font-size: 35px;
+  font-weight: 200;
+  margin: 0px;
+}
+.loginForm{
+  display: flex;
+  flex-direction: column;
+}
+.loginForm div{
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+
 }

@@ -6,7 +6,7 @@ import MainPage from './components/MainPage/MainPage';
 function App() {
   return (
     <div className="App">
-      <Navbar></Navbar>
+      <Navbar login={false}></Navbar>
       <MainPage></MainPage>
       <Footer></Footer>
     </div>

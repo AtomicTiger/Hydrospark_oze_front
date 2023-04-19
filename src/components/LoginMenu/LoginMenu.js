@@ -4,12 +4,14 @@ import './LoginMenu.css';
 function LoginMenu() {
   return (
     <div id='LoginMenu'>
-      <p></p>
-      <form>
-        <label></label>
-        <input></input>
-        <label></label>
-        <input></input>
+      <p className="loginTitle">LOG IN</p>
+      <form className='loginForm'>
+        <div>
+          <label >Email</label>
+          <input id='loginEmail'></input>
+          <label>Password</label>
+          <input id='loginPassword'></input>
+        </div>
         <button>Login</button>
       </form>
     </div>
