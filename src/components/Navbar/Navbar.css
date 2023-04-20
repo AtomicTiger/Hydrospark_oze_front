@@ -33,9 +33,13 @@
 }
 .MenuButton{
   align-items: center;
-  margin: 0px 15px 0px 15px
+  margin: 0px 15px 0px 15px;
+  text-decoration: none;
+  color: white;
 }
 #LoginButton{
+  text-decoration: none;
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
