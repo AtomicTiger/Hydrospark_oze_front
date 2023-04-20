@@ -36,9 +36,9 @@ function Navbar(props) {
           <div className="Bubbbles">
             {BubbleArray.map(function(object, i) {return <div style={{backgroundColor:"rgba(255, 255, 255, 0.2)", borderRadius:"100%", position:"fixed", right:object.right, top:object.top, width:object.size, height:object.size}} key={i}></div>;})}
           </div>
-          <Link className='MenuButton' to="/">Home</Link>
-          <Link className='MenuButton' to="/doc">Documentation</Link>
-          <Link className='MenuButton' to="/contact">Contact</Link>
+          <Link className='MenuButton' to="/"><p>Home</p></Link>
+          <Link className='MenuButton' to="/doc"><p>Documentation</p></Link>
+          <Link className='MenuButton' to="/contact"><p>Contact</p></Link>
           {props.login
            ? <Link id='LoginButton' to="/"><p>Log in</p></Link>
            : <div className='bubbleMargin'></div>
