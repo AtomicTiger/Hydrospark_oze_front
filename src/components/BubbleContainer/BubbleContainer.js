@@ -30,8 +30,8 @@ for(let i =0; i<15;i++){
   return (
     <div className='Bubbles'>
         <div>
-          { /* blue color bubbles ="rgba(189, 227, 255, 0.5)"*/}
-          { /* white color bubbles ="rgba(255, 255, 255, 0.2)"*/}
+          { /* blue color bubbles color="rgba(189, 227, 255, 0.5)"*/}
+          { /* white color bubbles color="rgba(255, 255, 255, 0.2)"*/}
           {BubbleArray.map(function(object, i) {return <div style={{ backgroundColor:props.color, borderRadius:"100%", position:"absolute", left:object.left, bottom:object.bottom, width:object.size, height:object.size, zIndex:0}} key={i}></div>;})}
         </div>
     </div>
