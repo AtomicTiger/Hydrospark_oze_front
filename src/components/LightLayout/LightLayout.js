@@ -9,7 +9,7 @@ function LightLayout(){
         <div id="LightLayout">
             <Navbar login={true}></Navbar>
             <Outlet></Outlet>
-            <BubbleContainer color={"rgba(255, 255, 255, 0.2)"}></BubbleContainer>
+            <BubbleContainer color={"rgba(189, 227, 255, 0.5)"}></BubbleContainer>
             <Footer></Footer>
         </div>
     )

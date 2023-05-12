@@ -1,9 +1,13 @@
 import './App.css';
 import LoginPage from './components/LoginPage/LoginPage';
 import MainPage from './components/MainPage/MainPage';
+import ContactPage from './components/ContactPage/ContactPage';
+import DocumentPage from './components/DocumentPage/DocumentPage';
+import UserPage from './components/UserPage/UserPage';
 import { createBrowserRouter, RouterProvider,  } from 'react-router-dom';
 import DarkLayout from './components/DarkLayout/DarkLayout';
 import LightLayout from './components/LightLayout/LightLayout';
+
 
 //Strona jest podzielona na Dark = login
 // oraz Light = cała reszta
@@ -13,10 +17,10 @@ const router = createBrowserRouter([
   element: <LightLayout/>,
   children: [
     {path: '/', element: <MainPage/>},
-    // {path: '/user', element: <UserPage/>} to ma być strona która działa na pobranych danych i jest inna dla każdego usera
+    {path: '/user', element: <UserPage/>}, //to ma być strona która działa na pobranych danych i jest inna dla każdego usera
       // {path: '/xxx', element: <DevicePage/>} inna strona dla każdego użądzenia generowana z tabeli, (albo nie)
-    // {path: '/document', element: <DocumentPage/>}
-    // {path: '/contact', element: <ContactPage/>}
+    {path: '/document', element: <DocumentPage/>},
+    {path: '/contact', element: <ContactPage/>}
   ]},
   {path: '/login',
   element: <DarkLayout/>,
