@@ -2,16 +2,16 @@ import { Outlet } from "react-router-dom";
 import BubbleContainer from "../BubbleContainer/BubbleContainer";
 import Footer from "../Footer/Footer";
 import Navbar from "../Navbar/Navbar";
-import './DarkLayout.css';
+import './LightLayout.css';
 
-function DarkLayout(){
+function LightLayout(){
     return(
-        <div id="DarkLayout">
-            <Navbar login={false}></Navbar>
+        <div id="LightLayout">
+            <Navbar login={true}></Navbar>
             <Outlet></Outlet>
             <BubbleContainer color={"rgba(255, 255, 255, 0.2)"}></BubbleContainer>
             <Footer></Footer>
         </div>
     )
 }
-export default DarkLayout;
+export default LightLayout;
