@@ -5,7 +5,7 @@ import './LoginPage.css';
 
 function MainPage() {
   return (
-    <div className='LoginPage'>
+    <div id='LoginPage'>
       <LoginMenu></LoginMenu>
       <RegisterMenu></RegisterMenu>
     </div>
