@@ -7,17 +7,17 @@ function RegisterMenu() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [reppassword, repsetPassword] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
   const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      navigate("/");
-      const response = await axios.post('http://localhost:3000/register', { email, password,reppassword });
+      const response = await axios.post('http://localhost:3000/register', { email, password,reppassword });///połączenie do api na backendzie
       console.log(response); // handle the response as needed
-      
+      navigate('/');//navigacja gdzie pozniej
     } catch (error) {
-      console.error('Failed to log in:', error);
+      setErrorMessage('Rejestracja nie powiodla sie. Sprawdz podane dane.');
     }
   };
 
@@ -44,6 +44,7 @@ function RegisterMenu() {
             onChange={(e) => repsetPassword(e.target.value)}
           ></input>
         </div>
+        {errorMessage && <p className="errorParagraph">{errorMessage}</p>}
         <button id='RegisterButtonForm' type='submit'
         >Register</button>
       </form>

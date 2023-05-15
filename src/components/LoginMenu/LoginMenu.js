@@ -1,21 +1,23 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import { useNavigate } from "react-router-dom";
 import './LoginMenu.css';
 
 function LoginMenu() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
+  const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:3000/login', { email, password });
-      console.log(response.data); // handle the response as needed
+      const response = await axios.post('http://localhost:3000/login', { email, password });///połączenie do api na backendzie
+      console.log(response.data); // tak wyciagasz co chcesz zeby ci wypisalo dane z requesta
+      navigate('/');//navigacja gdzie pozniej
     } catch (error) {
-      console.error('Failed to log in:', error);
+      setErrorMessage('Rejestracja nie powiodla sie. Sprawdz podane dane.');
     }
-    setEmail("");
-    setPassword("");
   };
   
   return (
@@ -38,6 +40,7 @@ function LoginMenu() {
             onChange={(e) => setPassword(e.target.value)}
           />
         </div>
+        {errorMessage && <p className="errorParagraph">{errorMessage}</p>}
         <button id='LoginButtonForm' type='submit'>Log in</button>
       </form>
     </div>
