@@ -14,7 +14,8 @@ function RegisterMenu() {
     e.preventDefault();
     try {
       const response = await axios.post('http://localhost:3000/register', { email, password,reppassword });///połączenie do api na backendzie
-      console.log(response); // handle the response as needed
+      const response2 = await axios.post('http://localhost:3000/login', { email, password });//logowanie po udanej rejestracji
+      console.log(response2);
       navigate('/');//navigacja gdzie pozniej
     } catch (error) {
       setErrorMessage('Rejestracja nie powiodla sie. Sprawdz podane dane.');
