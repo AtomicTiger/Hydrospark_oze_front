@@ -4,8 +4,8 @@ import axios from 'axios';
 import { useEffect, useState } from 'react';
 
 
-function UserPage() {
-  const [id, setID] = useState("64621715de8e4fab450c6ad8"); // Store the user ID obtained from the login process (currently hardcoded for demonstration)
+function UserPage(props) {
+  const [id, setID] = useState(props.UserData); // Store the user ID obtained from the login process (currently hardcoded for demonstration)
   const [email, setEmail] = useState("");
   const [devices,setDevices] = useState([]);
   useEffect(() => {
@@ -26,7 +26,7 @@ function UserPage() {
   }, [id]);
 
   useEffect(() => {
-    setID("64621715de8e4fab450c6ad8"); // Set the user ID here or based on your login process
+    setID(props.UserData); // Set the user ID here or based on your login process
   }, []);
   return (
     <div id='UserPage'>

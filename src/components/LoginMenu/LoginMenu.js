@@ -3,7 +3,7 @@ import axios from 'axios';
 import { useNavigate } from "react-router-dom";
 import './LoginMenu.css';
 
-function LoginMenu() {
+function LoginMenu(props) {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
@@ -12,9 +12,11 @@ function LoginMenu() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
+      props.onIdChange("tutaj ID")
       const response = await axios.post('http://localhost:3000/login', { email, password });///połączenie do api na backendzie
-      console.log(response.data); // tak wyciagasz co chcesz zeby ci wypisalo dane z requesta
-      navigate('/');//navigacja gdzie pozniej
+
+      console.log(response.data); // tak wyciagasz co chcesz zeby ci wypisalo dane z requesta  
+      navigate('/user');//navigacja gdzie pozniej
     } catch (error) {
       setErrorMessage('Rejestracja nie powiodla sie. Sprawdz podane dane.');
     }
