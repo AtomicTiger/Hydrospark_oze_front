@@ -24,6 +24,11 @@
   font-size: 20px;
 
 }
+.LogoBox img{
+  height: 40%;
+  margin-right: 10px;
+}
+
 .Menu{
   display: flex;
   justify-content: right;
