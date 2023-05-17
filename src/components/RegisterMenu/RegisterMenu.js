@@ -13,8 +13,8 @@ function RegisterMenu() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:3000/register', { email, password,reppassword });///połączenie do api na backendzie
-      const response2 = await axios.post('http://localhost:3000/login', { email, password });//logowanie po udanej rejestracji
+      const response = await axios.post('https://hydrospar.onrender.com/register', { email, password,reppassword });///połączenie do api na backendzie
+      const response2 = await axios.post('https://hydrospar.onrender.com/login', { email, password });//logowanie po udanej rejestracji
       console.log(response2);
       navigate('/');//navigacja gdzie pozniej
     } catch (error) {

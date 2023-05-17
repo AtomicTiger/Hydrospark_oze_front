@@ -13,7 +13,7 @@ function LoginMenu(props) {
     e.preventDefault();
     try {
       props.onIdChange("tutaj ID")
-      const response = await axios.post('http://localhost:3000/login', { email, password });///połączenie do api na backendzie
+      const response = await axios.post('https://hydrospar.onrender.com/login', { email, password });///połączenie do api na backendzie
 
       console.log(response.data); // tak wyciagasz co chcesz zeby ci wypisalo dane z requesta  
       navigate('/user');//navigacja gdzie pozniej

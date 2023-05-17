@@ -11,8 +11,8 @@ function UserPage(props) {
   useEffect(() => {
     const fetchUserData = async () => {
       try {
-        const response = await axios.get(`http://localhost:3000/getUserData/${id}`);
-        const response2 = await axios.get(`http://localhost:3000/devices/${id}/getDevices`);
+        const response = await axios.get(`https://hydrospar.onrender.com/getUserData/${id}`);
+        const response2 = await axios.get(`https://hydrospar.onrender.com/devices/${id}/getDevices`);
         setEmail(response.data.email);
         setDevices(response2.data);
       } catch (error) {
