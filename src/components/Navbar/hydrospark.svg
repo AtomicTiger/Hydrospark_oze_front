@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="23.489527mm"
+   height="32.412491mm"
+   viewBox="0 0 23.489527 32.412491"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2 (dc2aeda, 2022-05-15)"
+   sodipodi:docname="hydrospark.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="3.3413659"
+     inkscape:cx="2.5438699"
+     inkscape:cy="95.3203"
+     inkscape:window-width="1680"
+     inkscape:window-height="997"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-90.135583,-100.15048)">
+    <path
+       id="path1086"
+       style="fill:#000000;fill-opacity:1;stroke-width:0.229782"
+       d="M 101.60723 100.17425 L 95.962618 108.55203 L 91.228023 119.67642 L 90.135583 124.89574 L 93.777221 130.252 L 100.51479 132.58674 L 108.89103 130.80132 L 113.62511 126.13184 L 112.16835 118.71524 L 106.34183 108.41458 L 101.60723 100.17425 z M 101.70955 112.8479 L 107.90349 119.27541 L 104.86182 121.51817 L 110.14625 124.87042 L 103.72959 129.02469 L 106.10515 126.11995 L 99.17069 122.15896 L 104.05876 119.79734 L 94.672257 114.70153 L 101.70955 112.8479 z " />
+  </g>
+</svg>

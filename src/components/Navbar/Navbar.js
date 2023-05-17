@@ -30,6 +30,7 @@ function Navbar(props) {
                 </g>
               </svg>
             </div> */}
+            <img src = {require('./hydrospark.png')}></img>
             <div>HydroSpark</div>
         </div>
         <div className='Menu'>
