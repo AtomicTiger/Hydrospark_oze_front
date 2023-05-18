@@ -4,7 +4,12 @@ import './MainPage.css';
 function MainPage() {
   return (
     <div className='MainPage'>
-      Main Page = potrzebne grafiki i tekst
+      <div className="phoBox">
+        <img  src={require('./phone.png')} alt="Mobile phone showcasing the Hydrospark Mobile App"></img>
+      </div>
+      <div className='Aside'>
+
+      </div>
     </div>
   );
 }

@@ -1,10 +1,29 @@
-.MainPage{
+.MainPage {
   display: flex;
   flex-direction: row;
   box-sizing: border-box;
+  height: 650px;
   min-height: 100%;
-  margin-bottom: -100px;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 80vw;
+  margin-bottom: -200px;
 }
+
+.Aside {
+  flex-grow: 5;
+
+}
+
+.phoBox{
+  max-width: 300px;
+  z-index: 10;
+}
+
+.phoBox img{
+  width: 100%
+}
+
 @media only screen and (max-width: 820px) {
   .MainPage{
     display: flex;
