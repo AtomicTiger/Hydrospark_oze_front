@@ -1,6 +1,8 @@
 import './Navbar.css';
 import BurgerMenu from '../BurgerMenu/BurgerMenu';
 import { Link } from 'react-router-dom';
+import SlideMenu from '../SlideMenu/SlideMenu';
+import { useState } from 'react';
 
 function Navbar(props) {
 
@@ -16,20 +18,13 @@ function Navbar(props) {
     let size = getRandomInt(50,80)
     BubbleArray.push({right:right, top:top, size: size});
   }
+  const [SlideMenuClass, setSlideMenuClass]= useState(0);
+  const SlideMenuChange = (arg)=>{
+    setSlideMenuClass(arg)
+  }
   return (
     <div className='Navbar'>
         <div className='LogoBox'>
-            {/* <div>
-              <svg id="svgLogo">     
-                <defs id="defs2" />
-                <g>
-                    <path
-                    id="path1086"
-                    style={{fill:"#ffffff", fillOpacity:1, strokeWidth:0.229782}}
-                    d="M 1.60723 0.17425 L -5.962618 8.55203 L -9.228023 19.67642 L -10.135583 24.89574 L -7.777221 30.252 L 0.51479 32.58674 L 8.89103 30.80132 L 13.62511 26.13184 L 12.16835 18.71524 L 6.34183 8.41458 L 1.60723 0.17425 z M 1.70955 12.8479 L 7.90349 19.27541 L 4.86182 21.51817 L 10.14625 24.87042 L 3.72959 29.02469 L 6.10515 26.11995 L -1.17069 22.15896 L 4.05876 19.79734 L -6.672257 14.70153 L 1.70955 12.8479 z " />
-                </g>
-              </svg>
-            </div> */}
             <img src = {require('./hydrospark.png')}></img>
             <div>HydroSpark</div>
         </div>
@@ -45,7 +40,8 @@ function Navbar(props) {
            : <div className='bubbleMargin'></div>
           }
 
-          <BurgerMenu></BurgerMenu>
+          <BurgerMenu onBurgerChange={SlideMenuChange}></BurgerMenu>
+          <SlideMenu login={props.login} state={SlideMenuClass}></SlideMenu>
         </div>
 
     </div>
