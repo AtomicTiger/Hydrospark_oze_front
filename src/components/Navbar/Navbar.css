@@ -5,7 +5,7 @@
   display: flex;
   position: fixed;
   top: 0px;
-  z-index: 2;
+  z-index: 20;
   justify-content: space-between;
   background-color: #B38FFF;
   font-size: 16px;

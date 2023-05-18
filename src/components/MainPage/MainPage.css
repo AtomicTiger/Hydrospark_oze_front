@@ -5,7 +5,7 @@
   flex-direction: row;
   box-sizing: border-box;
   padding-top: 20px;
-  height: 750px;
+  height: 70vh;
   min-height: 100%;
   align-items: center;
   justify-content: space-evenly;
@@ -56,6 +56,7 @@
     display: flex;
     flex-direction: column;
     width: 95vw;
+    height:max-content;
   }
 
   .phoBox{
@@ -81,7 +82,7 @@
   }
   
   .buttonCont img{
-    width: 75%;
+    width: 150px;
     margin: auto;
     margin-bottom: 15px;
   }
