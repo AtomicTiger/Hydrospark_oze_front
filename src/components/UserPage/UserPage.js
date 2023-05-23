@@ -1,11 +1,13 @@
 import './UserPage.css';
 import Device from '../Device/Device';
 import axios from 'axios';
+import { useLocation } from "react-router-dom";
 import { useEffect, useState } from 'react';
 
 
 function UserPage(props) {
-  const [id, setID] = useState(props.UserData); // Store the user ID obtained from the login process (currently hardcoded for demonstration)
+  const {state} = useLocation();
+  const { id } = state;// Store the user ID obtained from the login process (currently hardcoded for demonstration)
   const [email, setEmail] = useState("");
   const [devices,setDevices] = useState([]);
   useEffect(() => {
@@ -25,9 +27,9 @@ function UserPage(props) {
     }
   }, [id]);
 
-  useEffect(() => {
-    setID(props.UserData); // Set the user ID here or based on your login process
-  }, []);
+  // useEffect(() => {
+  //   setID(props.UserData); // Set the user ID here or based on your login process
+  // }, []);
   return (
     <div id='UserPage'>
       <div className='UserTitle'>Welcome {email}</div>
