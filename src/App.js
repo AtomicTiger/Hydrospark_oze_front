@@ -14,11 +14,7 @@ import LightLayout from './components/LightLayout/LightLayout';
 
 function App() {
 
-  const [UserData, setUserData] = useState("64621715de8e4fab450c6ad8");
-  const onIdChange =(arg)=>{
-    console.log("arg in App.js",arg);
-    setUserData(arg);
-  }
+
 
   //Strona jest podzielona na Dark = login
   // oraz Light = cała reszta
@@ -28,7 +24,7 @@ function App() {
     element: <LightLayout/>,
     children: [
       {path: '/', element: <MainPage/>},
-      {path: '/user', element: <UserPage UserData={UserData}/>}, //to ma być strona która działa na pobranych danych i jest inna dla każdego usera
+      {path: '/user', element: <UserPage/>}, //to ma być strona która działa na pobranych danych i jest inna dla każdego usera
         // {path: '/xxx', element: <DevicePage/>} inna strona dla każdego użądzenia generowana z tabeli, (albo nie)
       {path: '/document', element: <DocumentPage/>},
       {path: '/contact', element: <ContactPage/>}
@@ -36,7 +32,7 @@ function App() {
     {path: '/login',
     element: <DarkLayout/>,
     children: [
-      {path: '/login', element: <LoginPage onIdChange={onIdChange}/>}
+      {path: '/login', element: <LoginPage/>}
     ]},
   ])
 

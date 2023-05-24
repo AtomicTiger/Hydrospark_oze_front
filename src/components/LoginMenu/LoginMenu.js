@@ -12,7 +12,6 @@ function LoginMenu(props) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      props.onIdChange("tutaj ID")
       const response = await axios.post('https://hydrospar.onrender.com/login', { email, password });///połączenie do api na backendzie
 
       console.log(response.data); // tak wyciagasz co chcesz zeby ci wypisalo dane z requesta  

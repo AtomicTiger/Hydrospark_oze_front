@@ -29,7 +29,7 @@
 .idInput{
   box-sizing: border-box ;
   font-size: 16px;
-  border: 0px;
+  border: 1px #8C5DA1 solid;
   height: 45px;
   border-radius: 5px;
   width: 100%;
