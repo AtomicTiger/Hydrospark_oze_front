@@ -17,7 +17,7 @@
 .Device button{
     font-family: 'Exo';
     box-sizing: content-box;
-    width: 80px;
+    width: 140px;
     height: 30px;
     background-color: #8C5DA1;
     font-size: 18px;
@@ -37,6 +37,7 @@
     flex-direction: row;
     margin: 10px;
     font-size: 22px;
+    font-weight: 600;
 }
 
 .devbox2 {

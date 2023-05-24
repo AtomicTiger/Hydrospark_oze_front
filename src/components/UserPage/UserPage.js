@@ -36,7 +36,6 @@ function UserPage(props) {
     try{
       console.log("wooaaah you added a new device");
       console.log(NewId)
-      // '/users/:userId/devices/:deviceId/createuserdevice'
       const response3 = await axios.post(`https://hydrospar.onrender.com/users/${id}/devices/${NewId}/createuserdevice`);
       console.log(response3)
     }
@@ -62,8 +61,8 @@ function UserPage(props) {
           </form>
         </div>
       </div>
-      {devices.map(element => (
-        <Device device={element} key={element.id} />
+      {devices.map((element, index) => (
+        <Device device={element} key={index} />
       ))}
 
     </div>
