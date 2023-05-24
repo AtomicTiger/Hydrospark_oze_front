@@ -33,6 +33,16 @@ function UserPage(props) {
   return (
     <div id='UserPage'>
       <div className='UserTitle'>Welcome {email}</div>
+      <div className='Device'>
+        <div className='devbox2'>
+          <p>To add your device sue it's ID code here</p>
+          <form>
+            <input className='idInput' type="text"></input>
+            <button id='addDevice'>Add Device</button>
+          </form>
+        </div>
+      </div>
+
       {devices.map(element => (
         <Device device={element} key={element.id} />
       ))}
