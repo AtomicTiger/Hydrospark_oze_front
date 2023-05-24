@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
-import axios from 'axios';
 import { useNavigate } from "react-router-dom";
+import React, { useContext, useState } from 'react';
+import LoginContext from "../LightLayout/LoginContext";
+import axios from 'axios';
 import './LoginMenu.css';
 
 function LoginMenu(props) {
@@ -14,7 +15,6 @@ function LoginMenu(props) {
     try {
       props.onIdChange("tutaj ID")
       const response = await axios.post('https://hydrospar.onrender.com/login', { email, password });///połączenie do api na backendzie
-
       console.log(response.data); // tak wyciagasz co chcesz zeby ci wypisalo dane z requesta  
       navigate('/user', { state: { id: response.data } });//navigacja gdzie pozniej
     } catch (error) {

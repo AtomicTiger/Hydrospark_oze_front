@@ -22,6 +22,9 @@ function Navbar(props) {
   const SlideMenuChange = (arg)=>{
     setSlideMenuClass(arg)
   }
+
+  console.log(props.id);
+
   return (
     <div className='Navbar'>
         <div className='LogoBox'>
@@ -37,7 +40,7 @@ function Navbar(props) {
           <Link className='MenuButton' to="/contact"><p>Contact</p></Link>
           {props.login
            ? <Link id='LoginButton' to="/login"><p>Log in</p></Link>
-           : <div className='bubbleMargin'></div>
+           : <Link id='LoginButton' to="/user" state={{id: props.id}}><p>User Page</p></Link>
           }
 
           <BurgerMenu onBurgerChange={SlideMenuChange}></BurgerMenu>

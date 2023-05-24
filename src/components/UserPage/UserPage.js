@@ -1,13 +1,14 @@
 import './UserPage.css';
 import Device from '../Device/Device';
 import axios from 'axios';
-import { useLocation } from "react-router-dom";
+import { useLocation, useOutletContext } from "react-router-dom";
 import { useEffect, useState } from 'react';
 
 
 function UserPage(props) {
   const {state} = useLocation();
-  const { id } = state;// Store the user ID obtained from the login process (currently hardcoded for demonstration)
+  const id = state.id;// Store the user ID obtained from the login process (currently hardcoded for demonstration)
+  console.log(state);
   const [email, setEmail] = useState("");
   const [devices,setDevices] = useState([]);
   useEffect(() => {
