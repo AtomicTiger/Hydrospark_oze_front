@@ -3,6 +3,7 @@ import BurgerMenu from '../BurgerMenu/BurgerMenu';
 import { Link } from 'react-router-dom';
 import SlideMenu from '../SlideMenu/SlideMenu';
 import { useState } from 'react';
+import Session from 'react-session-api'
 
 function Navbar(props) {
 
@@ -38,9 +39,9 @@ function Navbar(props) {
           <Link className='MenuButton' to="/"><p>Home</p></Link>
           <Link className='MenuButton' to="/document"><p>Documentation</p></Link>
           <Link className='MenuButton' to="/contact"><p>Contact</p></Link>
-          {props.login
+          {Session.get("UserId") === undefined
            ? <Link id='LoginButton' to="/login"><p>Log in</p></Link>
-           : <Link id='LoginButton' to="/user" state={{id: props.id}}><p>User Page</p></Link>
+           : <Link id='LoginButton' to="/user"><p>User Page</p></Link>
           }
 
           <BurgerMenu onBurgerChange={SlideMenuChange}></BurgerMenu>
