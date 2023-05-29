@@ -46,3 +46,18 @@
     margin-left: 30px;
     font-size: 18px;
 }
+.hidden{
+  display: none;
+}
+.DeviceInput{
+  box-sizing: border-box ;
+  font-size: 16px;
+  border: 1px #8C5DA1 solid;
+  height: 40px;
+  border-radius: 5px;
+  width: fit-content;
+  min-width: 200px;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 15px;
+  box-shadow: 0px 3px 3px rgba(000, 000, 000, 0.3) ;
+}
