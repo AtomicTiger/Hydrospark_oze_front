@@ -2,6 +2,9 @@ import './ContactPage.css';
 import { MapContainer, TileLayer, Marker, Popup, useMapEvents } from 'react-leaflet';
 import { useState, useEffect } from 'react';
 import 'leaflet/dist/leaflet.css';
+import markerIconPng from "leaflet/dist/images/marker-icon.png"
+import {Icon} from 'leaflet'
+
 
 function ContactPage(props) {
   const [clickedLatLng, setClickedLatLng] = useState({lat: 50.203360237954996, lng: 19.206428186368925});
@@ -20,7 +23,7 @@ function ContactPage(props) {
           <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
           <MyComponent />
           {clickedLatLng && (
-            <Marker position={clickedLatLng}>
+            <Marker position={clickedLatLng} icon={new Icon({iconUrl: markerIconPng, iconSize: [25, 41], iconAnchor: [12, 41]})}>
               <Popup>
                 CKZIU Jaworzno {clickedLatLng.lat.toFixed(4)}, {clickedLatLng.lng.toFixed(4)}
               </Popup>

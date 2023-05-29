@@ -16,7 +16,7 @@ function RegisterMenu() {
       const response = await axios.post('https://hydrospar.onrender.com/register', { email, password,reppassword });///połączenie do api na backendzie
       const response2 = await axios.post('https://hydrospar.onrender.com/login', { email, password });//logowanie po udanej rejestracji
       console.log(response2);
-      navigate('/');//navigacja gdzie pozniej
+      navigate('/login');//navigacja gdzie pozniej
     } catch (error) {
       setErrorMessage('Rejestracja nie powiodla sie. Sprawdz podane dane.');
     }
