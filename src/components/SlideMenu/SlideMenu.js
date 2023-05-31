@@ -8,7 +8,6 @@ function SlideMenu(props) {
     return (
         <div className={MenuState[props.state]} >
             <Link className='SlideMenuButton' to="/"><p>Home</p></Link>
-            <Link className='SlideMenuButton' to="/document"><p>Documentation</p></Link>
             <Link className='SlideMenuButton' to="/contact"><p>Contact</p></Link>
             {Session.get("UserId") === undefined
                 ? <Link className='SlideMenuButton' to="/login"><p>Log in</p></Link>

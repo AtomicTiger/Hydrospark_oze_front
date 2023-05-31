@@ -37,7 +37,6 @@ function Navbar(props) {
             {BubbleArray.map(function(object, i) {return <div style={{backgroundColor:"rgba(255, 255, 255, 0.2)", borderRadius:"100%", position:"fixed", right:object.right, top:object.top, width:object.size, height:object.size}} key={i}></div>;})}
           </div>
           <Link className='MenuButton' to="/"><p>Home</p></Link>
-          <Link className='MenuButton' to="/document"><p>Documentation</p></Link>
           <Link className='MenuButton' to="/contact"><p>Contact</p></Link>
           {Session.get("UserId") === undefined
            ? <Link id='LoginButton' to="/login"><p>Log in</p></Link>

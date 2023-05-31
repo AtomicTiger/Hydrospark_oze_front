@@ -25,8 +25,6 @@ function App() {
     children: [
       {path: '/', element: <MainPage/>},
       {path: '/user', element: <UserPage/>}, //to ma być strona która działa na pobranych danych i jest inna dla każdego usera
-        // {path: '/xxx', element: <DevicePage/>} inna strona dla każdego użądzenia generowana z tabeli, (albo nie)
-      {path: '/document', element: <DocumentPage/>},
       {path: '/contact', element: <ContactPage/>}
     ]},
     {path: '/login',
