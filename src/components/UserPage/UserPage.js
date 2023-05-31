@@ -59,7 +59,7 @@ function UserPage(props) {
       <div className='UserTitle'>Welcome {Session.get("UserEmail")}<button id="LogoutButton" onClick={Logout}>Log out</button>  </div>
       <div className='Device'>
         <div className='devbox2'>
-          <p>To add your device sue it's ID code here</p>
+          <p>To add your device use it's ID code here</p>
           <form>
             <input onChange={changeNewId} className='idInput' type="text"></input>
             <button id='addDevice' onClick={addDevice}>Add Device</button>
